@@ -50,3 +50,14 @@ JRE stands for Java Runtime Environment, also writeen as Java RTE, is a set of s
 JDK or Java Development Kit is a software development environment which is used to develop Java application. It physically exists and it contains JRE and all the necessarry development tools.
 
 The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+## Variables
+
+There are three type of variables in Java: local variable, instance variable, static variable
+
+1. Local Variable: A variable declared inside the body of method is called local variable. A local variable is only valid within the method, it is unavailable to other methods.
+    >It cannot be defined with static keyword.
+
+2. Instance Variable: A varialbe delcared inside the class but outside the body of the method, is called instance variable. It is not declared as static. It is a instance-specific variable and it is not shared among instances.
+
+3. Static Variable: A variable that is declared as static is called static variable. It is not local, you can create a single copy of the static variable and share it among all the instances of the class. Memory allocation is happened only once when the class is loaded in the memory.
