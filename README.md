@@ -30,6 +30,11 @@ public class FirstClass {
 ## JVM
 JVM (Java Virtual Machine) is an abstract machine. It is called virtual machine because it is not physically exist. It is a specification that provides a runtime environment to run Java bytecode can be executed.
 
+A JVM is:
+- A specification where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Oracle and other companies.
+- An implementation Its implementation is known as JRE (Java Runtime Environment).
+- Runtime Instance Whenever you write java command on the command prompt to run the java class, an instance of JVM is created.
+
 JVM can performs following main tasks:
 - Loads code
 - Verifies Code
