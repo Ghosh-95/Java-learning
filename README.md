@@ -61,3 +61,37 @@ There are three type of variables in Java: local variable, instance variable, st
 2. Instance Variable: A varialbe delcared inside the class but outside the body of the method, is called instance variable. It is not declared as static. It is a instance-specific variable and it is not shared among instances.
 
 3. Static Variable: A variable that is declared as static is called static variable. It is not local, you can create a single copy of the static variable and share it among all the instances of the class. Memory allocation is happened only once when the class is loaded in the memory.
+
+## Data Types
+
+1. `Primitive Data Types`: There are 8 primitive data types in Java
+    - `byte` (1 byte) : Stores whole number fron -128 to 127.
+    - `short` (2 bytes) : Stores whole number fron -32,768 to 32,767.
+    - `int` (4 bytes) : Stores whole number fron -214,74,83,648 to 214,74,83,647.
+    - `long` (8 bytes) : Stores whole number fron -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+    - `float` (4 bytes) : Stores fractional numbers, can store upto 7 decimal digits.
+    - `double` (8 bytes) : Stores fractional numbers, can store upto 15 decimal digits.
+    - `double` (2 bytes) : Stores true or false values.
+    - `char` (1 bytes) : Stores a single character/letter or ASCII values
+
+    ```java
+    public class Primitive {
+
+        public static void main(String[] args) {
+
+            byte x = 127;
+            short a = 32767;
+            int b = 2147483647;
+            long c = 9223372036854775807L; // ends with L
+
+            float d = 9.8f; // ends with f
+            double pi = 3.14159265359d; // ends with d
+
+            char myInitial = 'S'; // within single quote
+
+            System.out.println(x + "\n" + a + "\n" + b + "\n" + c + "\n" + d + "\n" + pi + "\n" + myInitial);
+
+    
+        }
+    }
+    ```
