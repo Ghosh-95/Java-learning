@@ -88,6 +88,9 @@ There are three type of variables in Java: local variable, instance variable, st
             double pi = 3.14159265359d; // ends with d
 
             char myInitial = 'S'; // within single quote
+            char myValue = 86; // V (ASCII value)
+
+            boolean isEligible = true;
 
             System.out.println(x + "\n" + a + "\n" + b + "\n" + c + "\n" + d + "\n" + pi + "\n" + myInitial);
 
@@ -95,3 +98,13 @@ There are three type of variables in Java: local variable, instance variable, st
         }
     }
     ```
+    > Generally, 'double' is used for its capacity of storing more (15) decimal digits instead of 'float'. For whole numbers 'int' is usefull.
+
+2. `Non-Primitive Data Types`: These are called refrence types because they refer to objects. Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc.
+
+### The main difference between primitive and non-primitive data types are:
+
+ - Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+ - Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+ - A primitive type has always a value, while non-primitive types can be null.
+ - A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
