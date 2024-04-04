@@ -51,7 +51,37 @@ JDK or Java Development Kit is a software development environment which is used 
 
 The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
 
+## First Class
+
+```java
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("Hello World!!");
+    }
+}
+```
+
+Every line of code that runs in Java must be inside a `class`. In our example, we named the class Main. A class should always start with an uppercase first letter.
+
+>Java is case-sensitive: "MyClass" and "myclass" has different meaning.
+
+The name of the java file `must match the class name`. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed. The output should be:
+```
+Hello World!!
+```
+
 ## Variables
+
+To declare a variable: 
+> data-type variable-name = value;
+```java
+int x = 5;
+int y = 7;
+int z = 37;
+
+// OR
+int x = 5, y = 7, z = 37;
+```
 
 There are three type of variables in Java: local variable, instance variable, static variable
 
@@ -61,6 +91,15 @@ There are three type of variables in Java: local variable, instance variable, st
 2. Instance Variable: A varialbe delcared inside the class but outside the body of the method, is called instance variable. It is not declared as static. It is a instance-specific variable and it is not shared among instances.
 
 3. Static Variable: A variable that is declared as static is called static variable. It is not local, you can create a single copy of the static variable and share it among all the instances of the class. Memory allocation is happened only once when the class is loaded in the memory.
+
+The general rules for naming variables are:
+
+- Names can contain letters, digits, underscores, and dollar signs.
+- Names must begin with a letter.
+- Names should start with a lowercase letter, and cannot contain  whitespace.
+- Names can also begin with $ and _ (but we will not use it in this tutorial).
+- Names are case-sensitive ("myVar" and "myvar" are different variables).
+- Reserved words (like Java keywords, such as int or boolean) cannot be used as names.
 
 ## Data Types
 
@@ -153,3 +192,35 @@ There are three type of variables in Java: local variable, instance variable, st
         }
     }
     ```
+## Java Operators
+
+Operators are used to do operatioins on variables and values. Like, with substraction operator one can substract a value from another:
+```java
+int x = 5, y = 10;
+int a = y - x;
+```
+
+Java divides the operators into the following groups:
+- Arithmetic operators (+, -, /, %, *, ++, --)
+- Assignment operators (=, +=, -=, /=, *=, %=)
+- Comparison operators (==, !=, >, >=, <, <=)
+- Logical operators (&&, ||, !)
+- Bitwise operators
+
+```java
+int x = 29, y = 32;
+
+// Arithmatic Operators
+int sum = 5 + 7;
+int substraction = 10 - 5;
+int multiply = x * y;
+int divide = 10 / 5;
+++x;
+--y;
+
+// Assignment Operators
+int a = 25;
+int sum1 += 25;
+int sub1 -= 10;
+
+```
