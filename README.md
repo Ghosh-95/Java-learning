@@ -129,3 +129,27 @@ There are three type of variables in Java: local variable, instance variable, st
 
  - You can take input of any data type. For integer you can use `sc.nextInt()` and `sc.nextFloat` for float.
  - In the above code, sc.next() will only take one token - one word - and doesn't print more than one word. To avoid this we can use `sc.nextLine()` to print strings.
+
+ ## Java Type Casting
+
+ Java type casting is when you assign a value of a primitive data type to another type. There are two types of casting in Java:
+ - Widening Casting: Casting happens from smaller type to larger data types and it happens automatically.
+    > byte --> short --> char --> int --> long --> float --> double
+ - Narrowing Casting: Converting a larger data type to smaller types. It needs to be done manually by placing the type in parenthesis in front of the value that to be casted.
+    > double --> float --> long --> int --> char --> short --> byte
+    ```java
+    public class TypeCasting {
+        public static void main(String[] args) {
+
+            int myAge = 24;
+            double floatAge = myAge; // Widening casting
+
+            System.out.println(floatAge);
+
+            double gravity = 9.8d;
+            int intGravity = (int) gravity; // Narrowing casting
+
+            System.out.println(intGravity);
+        }
+    }
+    ```
