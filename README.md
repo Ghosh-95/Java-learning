@@ -224,3 +224,64 @@ int sum1 += 25;
 int sub1 -= 10;
 
 ```
+
+## Strings
+A String variable contains a collection of characters surrounded by double quotes:
+```java
+String name = "Sushovan Ghosh";
+```
+### String Length: 
+The length of a string can be found by `length()` method.
+```java
+System.out.println("abcdefghijklmnopqrstuvwxyz".length()); // 26
+```
+### Changing Case:
+There are to metods to change case of a string: `toUpperCase()` and `toLowerCase()`:
+```java
+System.out.println(name.toUpperCase()); // SUSHOVAN GHOSH
+System.out.println(name.toLowerCase()); // sushovan ghosh
+```
+### Finding a character in a String:
+To find a certain character in a string we need to use `indexOf()` method. It returns the index (the position) of the first occurrence of a specified text in a string (including whitespace).
+```java
+String learning = "I am learning Java";
+System.out.println(learning.indexOf("am")); // 2
+```
+### Concatenation of Strings:
+To concatenate two string we need to use either of "+" operator or `concat()` method. While using string "+" operator acts as a concatenation.
+
+> Java uses the '+' operator for both addition and concatenation. Numbers are added, Strings are concatenated.
+
+```java
+String firstName = "Sushovan";
+String lastName = "Ghosh";
+
+System.out.println(firstName + " " + lastName);
+
+// OR use concat method
+System.out.println(firstName.concat(lastName));
+
+int x = 5, y = 3;
+System.out.println(x + y); // 8 (addition)
+
+String a = "10", b = "20"
+System.out.println(a + b); // 1020 (concatenation)
+```
+### Special Characters:
+
+Sometiems we need to put quote inside a string. But Java will misunderstand those type of string and throws an error:
+```java
+String txt = "We are the so-called "Vikings" from the north.";
+```
+To avoid these type of error, we use **escape sequences.** In this case we can use `backslash escape character`. It turns the special characters into string character.
+```java
+String txt = "We are the so-called \"Vikings\" from the north.";
+```
+>Use `\'` for single quotes and `\\` for backward-slash(\\).
+
+Other common escape sequences are:
+- \n (New line)
+- \b (Backspace)
+- \t (Tab)
+- \r (Return Carriage)
+- \f (Form feed)
