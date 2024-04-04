@@ -108,3 +108,24 @@ There are three type of variables in Java: local variable, instance variable, st
  - Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
  - A primitive type has always a value, while non-primitive types can be null.
  - A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
+
+ ## Taking input in Java
+
+ You need to import `Scanner` class which is a inbuilt utility class in Java. Then define a scanner variable inside the function with `new Scanner()` keyword and pass `System.in` inside it:
+ ```java
+ import java.util.Scanner;
+ // OR import java.util.*
+
+ public class Input {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        String greetings = sc.next();
+
+        System.out.println(greetings);
+    }
+}
+ ```
+
+ - You can take input of any data type. For integer you can use `sc.nextInt()` and `sc.nextFloat` for float.
+ - In the above code, sc.next() will only take one token - one word - and doesn't print more than one word. To avoid this we can use `sc.nextLine()` to print strings.
