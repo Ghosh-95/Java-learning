@@ -82,6 +82,27 @@ int z = 37;
 // OR
 int x = 5, y = 7, z = 37;
 ```
+- You can just declare a variable and assign a value sometimes later. You can change the value of a particular variable.
+    ```java
+    int x, y;
+    x = 10;
+    y = 20;
+    System.out.println(x + y); // 30
+
+    // changing the value
+    x = 80;
+    y = 200;
+    System.out.println(x + y); // 280
+    ```
+- You can make a variable final, so that the value of that variable cannot be changed (becomes constant).
+    ```java
+    final int pi = 3.14;
+    final int g = 9.8;
+
+    // changing these will throw an error
+    pi = 4.2;
+    g = 23;
+    ```
 
 There are three type of variables in Java: local variable, instance variable, static variable
 
@@ -132,8 +153,6 @@ The general rules for naming variables are:
             boolean isEligible = true;
 
             System.out.println(x + "\n" + a + "\n" + b + "\n" + c + "\n" + d + "\n" + pi + "\n" + myInitial);
-
-    
         }
     }
     ```
