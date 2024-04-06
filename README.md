@@ -21,11 +21,11 @@ public class FirstClass {
 
 1. You need a IDE (Intregated Development Environment) to write and edit Java Programs. There are many IDEs like VS Code, IntelliJ IDEA etc. that you can choose.
 
-    - Download [VS Code](https://code.visualstudio.com/)
-    - Download [IntelliJIDEA](https://www.jetbrains.com/idea/?var=1)
+    - Download [VS Codez🔗](https://code.visualstudio.com/)
+    - Download [IntelliJIDEAz🔗](https://www.jetbrains.com/idea/?var=1)
 
 2. You need to install a Java Development Kit (JDK) to run Java program in your machine. You can choose any JDK you can find on the internet. Here is one you might like:
-    - [JDK by Oracle](https://www.oracle.com/in/java/technologies/downloads/)
+    - [JDK by Oraclez🔗](https://www.oracle.com/in/java/technologies/downloads/)
 
 ## JVM
 JVM (Java Virtual Machine) is an abstract machine. It is called virtual machine because it is not physically exist. It is a specification that provides a runtime environment to run Java bytecode can be executed.
@@ -304,3 +304,37 @@ Other common escape sequences are:
 - \t (Tab)
 - \r (Return Carriage)
 - \f (Form feed)
+
+## Math
+
+The Java Math class has many methods that allows you to perform mathematical operation on numbers.
+
+> These methods always converts the passed number to double and return value likewise.
+
+`Math.max(double x, double y)` : This method can be used to find the highest value of x and y.
+```java
+Math.max(5, 6); // 6
+```
+
+`Math.min(double x, double y)` : This method can be used to find the lowest value of x and y.
+```java
+Math.min(3, 6); // 3
+```
+
+`Math.abs(double x)` : This method returns the absolute (positive) value of x.
+```java
+Math.abs(-4.2); // 4.2
+```
+`Math.sqrt(double x)` Returns square root of x. `Math.cbrt(double x)` Returns cube root of x.
+```java
+int sqRoot = (int) Math.sqrt(9); // OR Math.round(Math.sqrt(9));
+
+int cbRoot = (int) Math.cbrt(27);
+```
+
+`Math.random()`: Returns a random number from 0 (inclusive) to 1.0 (exclusive).
+```java
+int random = (int) Math.random();
+```
+
+Read more about Math [here 🔗](https://www.javatpoint.com/java-math)
