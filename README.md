@@ -354,3 +354,65 @@ System.out.println(isMarried); // false
 int x = 10, y = 98;
 System.out.println(y > x); // true
 ```
+
+## Conditionals
+
+You already know that Java supports the usual logical conditions from mathematics, for example >, >=, <, == etc.
+- Use if to specify a block of code to be executed, if a specified condition is true.
+- Use else to specify a block of code to be executed, if the same condition is false.
+- Use else if to specify a new condition to test, if the first condition is false.
+
+`if`: Use the if statement to specify a block of Java code to be executed if a condition is true.
+```txt
+if (condition) {
+  // block of code to be executed if the condition is true
+}
+```
+`if..else`: Use else statement to specify if the first condition is false.
+```txt
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+```
+`if..else if..else`: Use else if statement to specify a new condition if the first condition is false. You can put many else..if to execute a code by certain conditions.
+```txt
+if (condition1) {
+  // codes to be executed if condition1 is true
+} else if (condition2) {
+  // codes to be executed if the condition1 is false and condition2 is true
+} else {
+  // codes to be executed if the condition1 is false and condition2 is false
+}
+```
+
+`Ternary Operator`: There is a shorthand operator for if..else statement called Ternary operator. 
+```txt
+variable = (condition) ? expressionIfTrue :  expressionIfFalse;
+```
+```java
+int age = 21;
+
+String result = (age >= 18) ? "Eligible to drive" ? "Not Eligible";
+
+System.out.println(result); // Output: Eligible to drive
+
+// You can use these directly in a print statement
+System.out.println((age >= 18) ? "Eligible to drive" ? "Not Eligible");
+```
+
+`Switch Statement`: Instead of writing many if..else statements, you can use the switch statement.
+```java
+int day = 2;
+switch(day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  default:
+    System.out.println("Invalid input");
+}
+```
