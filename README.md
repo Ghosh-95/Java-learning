@@ -338,3 +338,19 @@ int random = (int) Math.random();
 ```
 
 Read more about Math [here 🔗](https://www.javatpoint.com/java-math)
+
+## Boolean 
+
+Java has a boolean data type, which can store true or false values.
+```java
+boolean isJavaFun = true;
+boolean isMarried = false;
+
+System.out.println(isJavaFun); // true
+System.out.println(isMarried); // false
+```
+`Boolean Expression`: A boolean expression returns a boolean value, true or false. It is use for building logic. For example you can use a comparison operator, such as greater than (>) operator:
+```java
+int x = 10, y = 98;
+System.out.println(y > x); // true
+```
