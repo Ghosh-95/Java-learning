@@ -28,11 +28,11 @@ public class FirstClass {
     - [JDK by Oraclez🔗](https://www.oracle.com/in/java/technologies/downloads/)
 
 ## JVM
-JVM (Java Virtual Machine) is an abstract machine. It is called virtual machine because it is not physically exist. It is a specification that provides a runtime environment to run Java bytecode can be executed.
+JVM (Java Virtual Machine) is an abstract machine. It is called virtual machine because it is not physically exist. It is a specification that provides a runtime environment to run and execute Java bytecode.
 
 A JVM is:
 - A specification where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Oracle and other companies.
-- An implementation Its implementation is known as JRE (Java Runtime Environment).
+- An implementation - Its implementation is known as JRE (Java Runtime Environment).
 - Runtime Instance Whenever you write java command on the command prompt to run the java class, an instance of JVM is created.
 
 JVM can performs following main tasks:
@@ -61,11 +61,28 @@ public class Main{
 }
 ```
 
-Every line of code that runs in Java must be inside a `class`. In our example, we named the class Main. A class should always start with an uppercase first letter.
+- Every line of code that runs in Java must be inside a `class`. In the example above, we named the class Main.
+- A class should always be capitalized/PascalCase, such as Main, MyClass.
+- 'public' keyword before any class name indicates that the class can be used in any other files.
+- 'main' is a function/method which executes with the class and always executes. It is convention to keep a main function inside any class.
+- 'void' means the function/method is not returning anything.
+- 'String[]' represents an array data type. 'args' are the arguments that are passed to the main function while running the file:
+  ```java
+  class File{
+    public static void main(String[] args) {
+      System.out.println(args[0]);
+    }
+  }
+
+  // terminal
+  java File.java "Sushovan" "John Doe"
+
+  // will give "Sushovan" as output
+  ```
 
 >Java is case-sensitive: "MyClass" and "myclass" has different meaning.
 
-The name of the java file `must match the class name`. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed. The output should be:
+The name of the java file **must match the class name**, if you are using 'public' keyword before it. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed. The output should be:
 ```
 Hello World!!
 ```
@@ -415,4 +432,37 @@ switch(day) {
   default:
     System.out.println("Invalid input");
 }
+```
+
+## Loops
+
+### While loop
+Checks for a condition and loops till that condition matches. you have to either increment or decrement to keep the loop in a ranged number of time. Unless it will loop until infinity.
+```java
+int i = 0;
+while (i < 6) {
+  System.out.println(i); 
+  i++;
+}
+```
+### Do While
+Do while loop is an extended version of While loop. It performs something before checking any condition and runs atleast once.
+
+```java
+int i = 0;
+do{
+  System.out.println(i);
+  i++;
+}
+while(i > 5);
+```
+
+### For loop
+Checks for a condition and loops till that condition matches.
+```java
+for(int i = 0; i < 10; i++) {
+  System.out.println(i);
+}
+
+// This code will print 0 to 9 in asscending order.
 ```
