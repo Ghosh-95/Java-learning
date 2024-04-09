@@ -18,5 +18,13 @@ public class Primitive {
 
         System.out.println(x + "\n" + a + "\n" + b + "\n" + c + "\n" + d + "\n" + pi + "\n" + myInitial);
 
+        // MAX_VALUE and MIN_VALUE represents maximum and minimum value, that can be
+        // stored in Java as numbers, respectively.
+        double maxDouble = Double.MAX_VALUE;
+        double minDouble = Double.MIN_VALUE;
+
+        System.out.println("Maximum double number " + maxDouble);
+        System.out.println("Min double number " + minDouble);
+
     }
 }
