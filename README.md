@@ -501,3 +501,38 @@ for(String i: cars) {
     System.out.println(i);
   }
   ```
+
+## Array
+Arrays are a type of data structure that are used to store multiple values in a single variable. To declare an array declare a variable type with **square brackets**
+> type[] variableName = {element1, element2, element3, ...};
+
+```java
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+int[] nums = {1,2,3,4,5,6};
+
+// you can change a value of a variable by it's index number
+cars[0] = "Volkswagon";
+```
+
+### length
+To calculate length of an array.
+
+```java
+String[] fruits = {"apple", "banana", "blueberry"};
+System.out.println(fruits.length);
+```
+> We can use loops to loop through array elements.
+
+```java
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+for(int i = 0; i < cars.length; i++) {
+  System.out.println(cars[i]);
+}
+
+// OR
+
+for(String car : cars) {
+  System.out.println(car);
+}
+```
