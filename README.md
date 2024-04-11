@@ -466,3 +466,16 @@ for(int i = 0; i < 10; i++) {
 
 // This code will print 0 to 9 in asscending order.
 ```
+### For Each Loop
+There is another loop which is exclusively used to loop through array elements.
+```java
+for(dataType variableName : arrayName) {
+  // other code operation
+}
+
+String[] cars = {"Volvo", "Toyota", "Ford", "BMW"};
+
+for(String i: cars) {
+  System.out.println(i);
+}
+```

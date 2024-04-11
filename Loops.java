@@ -33,5 +33,13 @@ public class Loops {
                 System.out.println("Child Executes " + b);
             }
         }
+
+        System.out.println('\n');
+
+        String[] fruits = { "Mango", "Apple", "Banana", "Pineapple" };
+
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
     }
 }
