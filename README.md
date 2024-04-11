@@ -479,3 +479,25 @@ for(String i: cars) {
   System.out.println(i);
 }
 ```
+
+## Break and Continue
+
+- `break`: This keyword can be used to break out of a loop.
+  ```java
+  for (int i = 0; i < 10; i++) {
+    if (i == 4) {
+      break;
+    }
+    System.out.println(i);
+  }
+  ```
+- `continute`: Continue breaks **one** iteration (in the loop). It ignores a certain iteration and move forward to next loop.
+  ```java
+  for(int i = 0; i < 10; i++>) {
+    if(i == 4) {
+      continue;
+    }
+
+    System.out.println(i);
+  }
+  ```

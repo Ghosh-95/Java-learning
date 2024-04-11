@@ -41,5 +41,21 @@ public class Loops {
         for (String fruit : fruits) {
             System.out.println(fruit);
         }
+
+        for (int p = 0; p < 10; p++) {
+            if (p == 5) {
+                break;
+            }
+
+            System.out.println(p);
+        }
+
+        for (int c = 0; c < 10; c++) {
+            if (c == 7) {
+                continue;
+            }
+
+            System.out.println(c);
+        }
     }
 }
